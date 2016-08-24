@@ -4,8 +4,7 @@
  * Example of use:
  * <p>
  * <img src="contract.png">
- */
-/*
+ *
  * @startuml contract.png
  * Bob -> Alice : hello
  * Alice --> Bob : OK
