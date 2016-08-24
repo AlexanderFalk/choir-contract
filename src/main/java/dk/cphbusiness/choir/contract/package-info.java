@@ -1,10 +1,13 @@
 /**
- * Description.
+ * Demonstration for PlantUML.
+ * <p>
+ * Example of use:
+ * <p>
+ * <img src="contract.png">
  *
- * ![Example Diagram](example.png)
- *
- * @uml example.png
- * Alice -> Bob: Authentication Request
- * Bob --> Alice: Authentication Response
+ * @startuml contract.png
+ * Bob -> Alice : hello
+ * Alice --> Bob : OK
+ * @enduml
  */
 package dk.cphbusiness.choir.contract;
