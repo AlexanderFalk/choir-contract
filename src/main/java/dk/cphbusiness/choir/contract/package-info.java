@@ -8,6 +8,9 @@
  * @startuml contract.png
  * Bob -> Alice : hello
  * Alice --> Bob : OK
+ * 
+ * 
+ * 
  * @enduml
  */
 package dk.cphbusiness.choir.contract;
