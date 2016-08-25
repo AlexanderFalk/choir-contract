@@ -7,6 +7,9 @@
  * <p>Use case diagram</p>
  * <img src="ucd.png"/>
  * 
+ * <p>Subsystem sequence diagram for Edit Member</p>
+ * <img src="ssd.png"/>
+ * 
 * @startuml ldm.png
  * abstract class Person  {
  *   firstName
@@ -55,7 +58,7 @@
  * hide circle
  * @enduml
  * 
-  * @startuml ucd.png
+ * @startuml ucd.png
  * (Find Material for Member) as (UC1)
  * (Print birthday list) as (UC2)
  * (List music in repertoire) as (UC3)
@@ -72,6 +75,24 @@
  * (UC4) <-- Administrator
  * (UC5) <-- Administrator
  * (UC6) <-- Administrator
+ * @enduml
+ * 
+ * @startuml ssd.png
+ * hide footbox
+ * actor Member
+ * Member -> FE : Choose list of members
+ * FE -> BE : listMembers()
+ * BE --> FE : Collection<MemberSummary>
+ * FE --> Member : Show list of members
+ * Member -> FE : Choose member to edit
+ * FE -> BE : findMember(id: MemberIdentifier)
+ * BE --> FE : MemberDetail
+ * FE --> Member : Show member details
+ * Member -> FE : Choose edit
+ * FE --> Member : Show member details for editing
+ * Member -> FE : Commit changes
+ * FE -> BE : saveMember(member: MemberDetail)
+ * FE --> Member : Show confirmation
  * @enduml
  */
 package dk.cphbusiness.choir.contract;
