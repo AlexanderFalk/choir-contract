@@ -12,6 +12,3 @@
     - Download it manually
     - Install: Tools -> Plugins -> Downloaded -> Add Plugins and subsequently install it
   * Added dependencies to PlantUML and build instructions to `pom.xml`
-
-
-Test hallo...
