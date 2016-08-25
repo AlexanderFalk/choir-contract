@@ -1,9 +1,6 @@
 /**
  * Toolbox contract for Choir System
- * <p>
- * Example of use:
- * <p>
- * <img src="contract.png">
+ * <p>Logical Data Model</p>
  *
  * @startuml contract.png
  * abstract class Person  {
