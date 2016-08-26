@@ -17,7 +17,9 @@ public interface ChoirManager {
   /**
    * Find a member by identifier.
    * 
-   * @param id the member identifier
+   * @param id the member identifier, cannot be null
+   * @pre none
+   * @post none
    * @return A collection of member  summaries
    */
   MemberDetail findMember(MemberIdentifier id);
@@ -25,11 +27,11 @@ public interface ChoirManager {
   /**
    * Save a members details
    * 
-   * @pre
+   * @pre Member must be present
    * 
-   * @param member the member details 
+   * @param member the member details, cannot be null
    * 
-   * @post
+   * @post Member data is saved
    * 
    */
   void saveMember(MemberDetail member);
