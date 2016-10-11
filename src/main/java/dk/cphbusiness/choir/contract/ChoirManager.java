@@ -32,6 +32,7 @@ public interface ChoirManager {
    * @param member the member details, cannot be null
    * 
    * @post Member data is saved
+   * @post Something else
    * 
    */
   void saveMember(MemberDetail member);
