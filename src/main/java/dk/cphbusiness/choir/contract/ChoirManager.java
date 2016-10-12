@@ -10,7 +10,8 @@ public interface ChoirManager {
   /**
    * List all members.
    * 
-   * @return a list of member summaries 
+   * @return a not null collection of member summaries
+   * 
    */
   Collection<MemberSummary> listMembers();
   
@@ -20,7 +21,7 @@ public interface ChoirManager {
    * @param id the member identifier, cannot be null
    * @pre none
    * @post none
-   * @return A collection of member  summaries
+   * @return the details of the member
    */
   MemberDetail findMember(MemberIdentifier id);
   
