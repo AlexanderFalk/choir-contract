@@ -1,11 +1,15 @@
 package dk.cphbusiness.choir.contract;
 
 import java.util.Collection;
+import javax.ejb.Remote;
 
 /**
  * Description.
  */
+@Remote
 public interface ChoirManager {
+  
+  String sayHello(String name);
   
   /**
    * List all members.
