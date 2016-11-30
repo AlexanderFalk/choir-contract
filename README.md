@@ -1,4 +1,9 @@
-# This is the Contract for the Choir Application
+# choir-contract
+
+See also:
+* [choir-frontend](../../../choir-frontend)
+* [choir-backend](../../../choir-backend)
+* [choir-backend-mock](../../../choir-backend-mock)
 
 
 # Creation of Contract Project - Event Log
